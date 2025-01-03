@@ -22,20 +22,24 @@ async function generateCSS() {
 			const svgBuffer = await fs.promises.readFile(svgPath);
 			const base64Data = svgBuffer.toString('base64'); // Convert the buffer to Base64
 
-			// Create the CSS rule for this icon with the proper indentation
+			// Create the CSS rule for this icon
 			cssContent += `.qi-${iconName} {
 	background-image: url('data:image/svg+xml;base64,${base64Data}');
-	box-sizing: border-box;
-	width: 1rem;
-	height: 1rem;
-	display: inline-block;
-	background-size: contain;
 }\n\n`;
 
 		} catch (err) {
 			console.error("Error reading or converting SVG to Base64:", err);
 		}
 	}
+
+	// Adding shared CSS for width, height, and other common properties
+	cssContent = `.qi-icon {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    background-size: contain;
+    box-sizing: border-box;
+}\n\n` + cssContent;
 
 	// Ensure the dist directory exists
 	if (!fs.existsSync(outputDir)) {
