@@ -1,0 +1,24 @@
+{
+  "name": "queer-icons",
+  "version": "1.0.0",
+  "description": "A collection of queer icons usable for websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "queer",
+    "lgbt",
+    "icons",
+    "svg"
+  ],
+  "author": "queuing4oranges",
+  "license": "MIT",
+  "devDependencies": {
+    "svgo": "^3.3.2"
+  },
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "he": "^1.2.0"
+  }
+}
