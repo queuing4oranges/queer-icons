@@ -5,14 +5,8 @@ const path = require('path');
 const iconsDir = path.join(__dirname, '..', 'icons'); // Path to the 'icons' folder, going up one level
 const outputDir = path.join(__dirname, '..', 'dist'); // Path to output the generated CSS
 
-// Log the iconsDir path to ensure it's correct
-console.log("Icons Directory Path:", iconsDir);
-
 // Get all SVG files from the 'icons' directory
 const svgFiles = fs.readdirSync(iconsDir).filter(file => file.endsWith('.svg'));
-
-// Log the SVG files found
-console.log("SVG files found: ", svgFiles);
 
 // Initialize an empty string to hold the CSS content
 let cssContent = '';
@@ -28,14 +22,15 @@ async function generateCSS() {
 			const svgBuffer = await fs.promises.readFile(svgPath);
 			const base64Data = svgBuffer.toString('base64'); // Convert the buffer to Base64
 
-			// Create the CSS rule for this icon
-			cssContent += `.queer-icon-${iconName} {
-        background-image: url('data:image/svg+xml;base64,${base64Data}');
-        width: 32px; /* Adjust size */
-        height: 32px; /* Adjust size */
-        display: inline-block;
-        background-size: contain;
-      }\n\n`;
+			// Create the CSS rule for this icon with the proper indentation
+			cssContent += `.qi-${iconName} {
+	background-image: url('data:image/svg+xml;base64,${base64Data}');
+	box-sizing: border-box;
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+	background-size: contain;
+}\n\n`;
 
 		} catch (err) {
 			console.error("Error reading or converting SVG to Base64:", err);
