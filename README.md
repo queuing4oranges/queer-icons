@@ -12,7 +12,7 @@ A collection of rainbow icons to be used for LGBTQ+ content or by anyone who lov
 - <span style='color: #5295feff' >Blue (5295feff)</span>
 - <span style='color: #d66fe5ff' >Purple (d66fe5ff)</span>
 
-<img src='./screenshot.png'>
+<img src='screenshot.png'>
 
 ### Installation
 
