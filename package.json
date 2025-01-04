@@ -25,6 +25,7 @@
     "dist/",
     "icons/",
     "generate-css.js",
-    "README.md"
+    "README.md",
+    "screenshot.png"
   ]
 }
