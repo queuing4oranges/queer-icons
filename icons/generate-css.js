@@ -33,7 +33,7 @@ async function generateCSS() {
 	}
 
 	// Adding shared CSS for width, height, and other common properties
-	cssContent = `.qi-icon {
+	cssContent = `.qi {
     width: 1rem;
     height: 1rem;
     display: inline-block;

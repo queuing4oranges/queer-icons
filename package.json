@@ -1,6 +1,6 @@
 {
   "name": "queer-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of queer icons usable for websites.",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,11 @@
   "dependencies": {
     "base64-img": "^1.0.4",
     "he": "^1.2.0"
-  }
+  },
+  "files": [
+    "dist/",
+    "icons/",
+    "generate-css.js",
+	"README.md"
+  ]
 }
