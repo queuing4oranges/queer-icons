@@ -37,7 +37,7 @@ async function generateCSS() {
     width: 1rem;
     height: 1rem;
     display: inline-block;
-    background-size: contain;
+    background-size: cover;
     box-sizing: border-box;
 }\n\n` + cssContent;
 
