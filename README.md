@@ -1,7 +1,7 @@
 # Queer Icons
 
 A collection of rainbow icons to be used for LGBTQ+ content or by anyone who loves colorful icons.
-(Currently, the collection is a first draft of stars and flags, there will be more icons added.)
+(Currently, the collection is a first draft, but there will be more icons added.)
 
 ### Colors used:
 

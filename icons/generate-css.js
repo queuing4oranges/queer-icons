@@ -37,8 +37,9 @@ async function generateCSS() {
     width: 1rem;
     height: 1rem;
     display: inline-block;
-    background-size: cover;
+    background-size: contain;
     box-sizing: border-box;
+	background-repeat: no-repeat;
 }\n\n` + cssContent;
 
 	// Ensure the dist directory exists
